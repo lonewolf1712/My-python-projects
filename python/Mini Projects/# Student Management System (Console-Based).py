@@ -57,7 +57,7 @@ def view_student():
                     print("---------------------------------")
                 else:
                     print("Student not found.")
-                break # Exit loop after viewing specific student
+                break 
             except ValueError:
                 print("Invalid input. Please enter a valid number for Student ID.")
         elif choice == 'a':
@@ -65,7 +65,7 @@ def view_student():
             for student_id, details in students.items():
                 print(f"ID: {student_id}, Name: {details['Name']}, Age: {details['Age']}, Grade: {details['Grade']}")
             print("---------------------------")
-            break # Exit loop after viewing all students
+            break 
         else:
             print("Invalid choice. Please enter 'S' or 'A'.")
 
